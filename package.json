@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cypress:test:cloud": "lambdatest-cypress run",
-    "cypress:test:chrome": "npx cypress run -b chrome"
+    "cypress:test:chrome": "npx cypress run -b chrome",
+    "test":"npm run cypress"
   },
   "repository": {
     "type": "git",
