@@ -1,0 +1,35 @@
+{
+   "lambdatest_auth": {
+      "username": "anshita.bhasin@gmail.com",
+      "access_key": "yxu3wRJAzjY2rpgWjla3S5kBqwWTryAlfZIWNbdSGURPoXyoxR"
+   },
+   "browsers": [
+      {
+         "browser": "Chrome",
+         "platform": "Windows 10",
+         "versions": [
+            "latest-1"
+         ]
+      },
+      {
+         "browser": "Firefox",
+         "platform": "Windows 10",
+         "versions": [
+            "latest-1"
+         ]
+      }
+   ],
+   "run_settings": {
+      "config_file": "cypress.config.js",
+      "reporter_config_file": "base_reporter_config.json",
+      "build_name": "Cypress-Test-With-Docker",
+      "parallels": 1,
+      "specs": "./cypress/e2e/*.cy.js",
+      "ignore_files": "",
+      "network": false,
+      "headless": false,
+      "npm_dependencies": {
+         "cypress": "12.7.0"
+      }
+   }
+}
