@@ -17,9 +17,9 @@
   "bugs": {
     "url": "https://github.com/Anshita-Bhasin/Cypress_WithDocker/issues"
   },
-  "homepage": "https://github.com/Anshita-Bhasin/Cypress_WithDocker#readme",
+  "homepage": "https://github.com/Anshita-Bhasin/Cypress_WithDocker",
   "dependencies": {
-    "cypress": "^12.7.0",
+    "cypress": "^12.9.0",
     "lambdatest-cypress-cli": "^3.0.11"
   }
 }

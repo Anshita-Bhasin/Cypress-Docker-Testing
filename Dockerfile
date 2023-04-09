@@ -4,7 +4,14 @@ WORKDIR /app
 
 COPY . .
 
-RUN npm install 
+RUN npm install
 
-ENTRYPOINT ["npm","run", "cypress:test:cloud"]
+# Install ffmpeg for video recording
+RUN apt-get update && apt-get install -y ffmpeg
 
+# Set environment variables for video recording
+ENV CYPRESS_VIDEO_RECORDING=true
+ENV CYPRESS_VIDEO_COMPRESSION=30
+
+
+CMD ["npm", "run", "npx cypress run"] 
