@@ -6,7 +6,7 @@
   "scripts": {
     "cypress:test:cloud": "lambdatest-cypress run",
     "cypress:test:chrome": "npx cypress run -b chrome",
-    "test":"npm run cypress"
+    "test": "npm run cypress"
   },
   "repository": {
     "type": "git",
@@ -21,5 +21,8 @@
   "dependencies": {
     "cypress": "^12.9.0",
     "lambdatest-cypress-cli": "^3.0.11"
+  },
+  "devDependencies": {
+    "cypress-split": "^1.3.5"
   }
 }

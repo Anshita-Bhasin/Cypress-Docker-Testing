@@ -1,0 +1,12 @@
+# run 3 copies of the current job in parallel
+strategy:
+  fail-fast: false
+  matrix:
+    containers: [1, 2, 3]
+steps:
+  - name: Run split Cypress tests 
+    uses: cypress-io/github-action@v5
+    # pass the machine index and the total number
+    env:
+      SPLIT: ${{ strategy.job-total }}
+      SPLIT_INDEX: ${{ strategy.job-index }}
