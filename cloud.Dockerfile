@@ -6,5 +6,5 @@ COPY . .
 
 RUN npm install
 
-CMD ["npm", "run", "npx cypress run"] 
+CMD ["npm", "run", "cypress:test:cloud"] 
 

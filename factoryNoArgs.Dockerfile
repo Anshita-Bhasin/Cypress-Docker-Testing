@@ -1,5 +1,7 @@
 FROM cypress/factory
 
-COPY . /opt/app
-WORKDIR /opt/app
+WORKDIR /app
+
+COPY . .
+
 RUN npm install --save-dev cypress

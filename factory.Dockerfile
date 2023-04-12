@@ -5,7 +5,7 @@ ARG EDGE_VERSION='100.0.1185.29-1'
 ARG FIREFOX_VERSION='107.0'
 
 FROM cypress/factory
+WORKDIR /app
 
-COPY . /opt/app
-WORKDIR /opt/app
+COPY . .
 RUN npm install --save-dev cypress

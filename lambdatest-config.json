@@ -13,7 +13,29 @@
       "browser": "Firefox",
       "platform": "Windows 10",
       "versions": ["latest-1"]
+    },
+    {
+        "browser": "Edge",
+        "platform": "Windows 10",
+        "versions": [
+           "latest"
+        ]
+     },
+      {
+       "browser": "Firefox",
+       "platform": "MacOS Monterey",
+       "versions": [
+          "latest"  
+       ]
+    },
+ {
+       "browser": "Chrome",
+       "platform": "MacOS Big sur",
+       "versions": [
+          "latest"  
+       ]
     }
+
   ],
   "run_settings": {
     "config_file": "cypress.config.js",
