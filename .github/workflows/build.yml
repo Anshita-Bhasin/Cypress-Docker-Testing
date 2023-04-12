@@ -6,7 +6,7 @@ jobs:
    name: Cypress Tests on docker container
    # Cypress Docker image with Chrome v78
    # and Firefox v70 pre-installed
-   container: cypress/browsers:node12.13.0-chrome78-ff70
+   container: cypress/browsers:node12.18.3-chrome87-ff82
    steps:
      - uses: actions/checkout@v3
      - uses: cypress-io/github-action@v5
