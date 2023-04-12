@@ -2,7 +2,7 @@ name: Cypress Test in custom container
 on: [push]
 jobs:
  cypress-test:
-   runs-on: ubuntu-20.04
+   runs-on: ubuntu-22.04
    name: Cypress Tests on docker container
    # Cypress Docker image with Chrome v78
    # and Firefox v70 pre-installed
